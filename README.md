@@ -24,11 +24,30 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 
-Include your code here
+'''
+admin.py
+
+from django.contrib import admin
+from .models import Book
+admin.site.register(Book)
+
+model.py
+
+from django.db import models
+class Book(models.Model):
+    bookid = models.IntegerField()
+    bookname= models.CharField(("Bname"),max_length=20)
+    bookgenere = models.CharField(("Bgenere"),max_length=20)
+    bcost = models.FloatField()
+'''
 
 ## OUTPUT
 
-Include the screenshot of your admin page.
+![OUTPUT](./image.png)
+
+![OUTPUT](./webpage%20out.png)
+
+![OUTPUT](./web%20map.png)
 
 
 ## RESULT
